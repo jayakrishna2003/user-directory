@@ -1,0 +1,91 @@
+:root {
+    --primary-color: #007bff;
+    --primary-color-hover: #0056b3;
+    --background-light: #ffffff;
+    --background-dark: #121212;
+    --text-light: #ffffff;
+    --text-dark: #333333;
+  }
+  
+  [data-theme="light"] {
+    background-color: var(--background-light);
+    color: var(--text-dark);
+  }
+  
+  [data-theme="dark"] {
+    background-color: var(--background-dark);
+    color: var(--text-light);
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .home-container {
+    padding: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+   
+  }
+  
+  .title {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+  }
+  
+  .controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+  
+  .search-bar {
+    flex: 1;
+    padding: 0.5rem;
+    margin-right: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .sort-buttons button {
+    padding: 0.5rem 1rem;
+    margin-left: 0.5rem;
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .sort-buttons button:hover {
+    background-color: var(--primary-color-hover);
+  }
+  
+  .user-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .user-item {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .user-link {
+    font-weight: bold;
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+  
+  .user-link:hover {
+    text-decoration: underline;
+  }
+  
+  .user-info {
+    color: #555;
+  }
+  
