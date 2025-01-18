@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+# Wisdom Peak Analytics Assignment Reference Document
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Objective 
 
-## Available Scripts
+The goal of this assignment is to create a functional React.js application that fetches and displays a list of users from an API.
+The application should include features for searching, filtering, and viewing detailed information about each user.
+The expected learning outcomes from this assignment include understanding how to integrate APIs in a React application,
+managing state using either React Context API or Redux, handling asynchronous data fetching with loading and error states,
+and implementing responsive design with optional dark/light mode toggle.
 
-In the project directory, you can run:
 
-### `npm start`
+# Step-by-Step Instructions
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 1. Project Setup and Initialization
+## Set up the project directory:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+   i) Create a new directory for your project and navigate into it.
+   ii)Initialize a new React project using Create React App:
+   
+         npx create-react-app user-directory
+         
+   iii)Navigate into the project directory:
+   
+         cd user-directory
 
-### `npm test`
+## Install necessary dependencies:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+   i) React Router for navigation:
+   
+        npm install react-router-dom
+        
+   ii) For state management (choose one):
+   
+    React Context API (Builtin, no installation needed)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 2. Development Process
+## Home Page Setup:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+  i) Create a Home.js component.
+  ii) Fetch the list of users from the API: https://jsonplaceholder.typicode.com/users
+  iii) Display the users with their name, email, and city.
+  iv) Implement a search bar to filter users by name.
+  v) Implement sorting functionality for the user list (A-Z, Z-A).
+  vi) Ensure that clicking on a user navigates to their detail page.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## User Detail Page:
 
-### `npm run eject`
+  i) Create a UserDetail.js component.
+  ii) Fetch and display full user details (name, email, phone, company name, website).
+  iii) Include a "Go Back" button to return to the home page.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## State Management:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+  i) If using React Context API:
+        Set up a context provider to manage global state.
+        Use the context in your components to manage user data and application state.
+  ii) If using Redux:
+        Set up Redux store, actions, and reducers.
+        Connect your components to the Redux store.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Bonus Features:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   Implement a dark/light mode toggle.
 
-## Learn More
+# To run code 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    npm start
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+  
